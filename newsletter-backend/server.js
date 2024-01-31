@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://jeevankumarkorra:jeevan@emails.8ddiodu.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const Email = mongoose.model('Email', { address: String });
